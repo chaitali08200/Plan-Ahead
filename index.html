@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Reminder|Plan Ahead</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css" class="css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+      body {
+          background: url("banner5.png") no-repeat;
+          height: 100%;
+          background-size: cover;
+          background-position: center;
+          background-attachment: scroll;
+      }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#"><img src="assets/logo-removebg-preview.png" alt="" class="src"></a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn" >
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="index.html">Passport Reminder</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner">
+    <div class="about">
+      <div class="maincon">
+        <div id="booking" class="section">
+          <div class="section-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7 col-md-push-5">
+                  <div class="booking-cta">
+                    <h1>Never too early to start planning the adventure!</h1>
+                    
+                  </div>
+                </div>
+                <div class="col-md-4 col-md-pull-7">
+                  <div class="opc" style="background-color: rgb(255, 255, 255); opacity: 1; color: rgb(255, 255, 255);">
+                    <div class="booking-form">
+                      <form>
+                        
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <span class="form-label">First Name</span>
+                              <input class="form-control" type="text" >
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <span class="form-label">Middle Name</span>
+                              <input class="form-control" type="text" >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <span class="form-label">Last Name</span>
+                          <input class="form-control" type="text" placeholder="Your Last Name">
+                        </div>
+                        <div class="form-group">
+                          <span class="form-label">Nationality</span>
+                          <input class="form-control" type="text" placeholder="Your Nationality">
+                        </div>
+                        <div class="form-group">
+                          <span class="form-label">Place of birth</span>
+                          <input class="form-control" type="text" placeholder="Enter Place of birth">
+                        </div>
+                        <div class="form-group">
+                          <span class="form-label">Passport Number</span>
+                          <input class="form-control" type="text" placeholder="Enter Passport Number">
+                        </div>
+                        <div class="form-group">
+                          <span class="form-label">Passport Expiry Date</span>
+                          <input class="form-control" type="date" required>
+                        </div>
+                        <div class="form-group">
+                          <span class="form-label">Date Of Birth</span>
+                          <input class="form-control" type="date" required>
+                        </div>
+                        <div class="row">
+                          
+                          
+                  </div>        
+                        <div class="form-btn" style="opacity: 1; ">
+                          <button class="submit-btn">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+</body>
+</html>
